@@ -2,19 +2,14 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://unpkg.com/xp.css" />
+    <link rel="stylesheet" href="Style.css" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Portfolio</title>
-<div class="window" style="width: 200px;">  
-  <div class="title-bar">
-    <div class="title-bar-text">Links</div>
-    <div class="title-bar-controls">
-      <button aria-label="Help"></button>
-      <button aria-label="Close"></button>
-    </div>
-  </div>
-  <ul class="tree-view">
+    <title>Website Project</title>
+    <aside style=" position: fixed; top: 0; bottom: 0; padding: 8px;
+     display: flex; align-items: stretch; unicode-bidi: isolate;">
+    <ul style="width: 150px; overflow-y: scroll;" class="tree-view">
         <li>
          About My Website
         </li>
@@ -28,7 +23,6 @@
         <li>
           Works
           <ul>
-            <li><a href="#Java Cal">Java Calculator</a></li>
             <li><a href="#Source Code">Source Code</a></li>
             <li><a href="https://github.com/CarlosGuison?tab=repositories"target="_blank">Github Download</a></li>
           </ul>
@@ -41,30 +35,53 @@
             </ul>
         </li>
     </ul>
+  </aside>
+<br>
+</head>
+<main style="margin-left: 240px">
+<div class="window" style="margin: 32px; text-align:center; width: 300px">
+  <div class="title-bar">
+    <div class="title-bar-text">Welcome Message</div>
+    <div class="title-bar-controls">
+      <button aria-label="Help"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body">
+    <p>Welcome to my Late 2000s Inspired Website Portfolio</p>
+  </div>
 </div>
 <br>
-    <button disabled>Edit Website</button>
-</head>
-<br>
 <body class="surface">
-  <br>
-  <section class="components">
-  <h3 id="About My Website">About My Website</h3>
-  <br>
-  <h4><p><strong>Welcome to my Late 2000s Inspired Website Portfolio</strong></p>
-  <p>Made By Me, XP CSS Style Was Made By botoxparty 
-    <a href="https://github.com/botoxparty/XP.css">Github</a> </p> </h4>
-  </section>
   <br>
     <hr>
   <h3 id="My Information">About Me</h3>
   <br>
-  <p>
-    My Name Is <strong>Carlos T. Guison</strong> A 18 Years Old Student at San Francisco High School<br>
-    Currently Doing Work Immersion at <a href="https://www.phinma.edu.ph/"target="_blank">PHINMA</a><br>
-    My Goal is To Be A Front-End Developer or a Unity Game Developer
-  </p>
+  <div class="window">
+    <div class="title-bar">
+      <div class="title-bar-text">Command Prompt</div>
+      <div class="title-bar-controls">
+        <button aria-label="Minimize"></button>
+        <button aria-label="Maximize"></button>
+        <button aria-label="Close"></button>
+      </div>
+    </div> 
+  <div class="window-body">
+      <pre>Microsoft&#10094;R&#10095; Windows DOS
+        &#10094;C&#10095; Copyright Microsoft Corp 1990-2001.
+        <br>C:&#92;WINDOWS&#92;SYSTEM32> My Personal Information
+        <br>C:&#92;WINDOWS&#92;SYSTEM32> My Name is Carlos T. Guison, Male, and a 21 Year Old Student at Phinma Saint Jude Collage
+        <br>C:&#92;WINDOWS&#92;SYSTEM32> I Can Speak in Both English and Tagalog (I am a bit more Confident if we talk in English)
+        <br>C:&#92;WINDOWS&#92;SYSTEM32> I am a bit Shy and Introveted but Willing to Learn and Expand my Curent Skillset
+        <br>C:&#92;WINDOWS&#92;SYSTEM32> My Goals
+        <br>C:&#92;WINDOWS&#92;SYSTEM32> 1st is Obtain my Bachelor's in IT (Information and Technology)
+        <br>C:&#92;WINDOWS&#92;SYSTEM32> 2nd is to Learn about Video Game Development and Use Unity to Make a Game
+      </pre>
+    </div>
+  </div>
+  <br>
   <hr>
+  <br>
   <div id="Contact" class="window" style="width: 450px;">
     <div class="title-bar">
       <div class="title-bar-text">My Contact Info</div>
@@ -81,41 +98,9 @@
    <br> 
    <p><strong>Email:guison.business@gmail.com</strong></p>
    <p><strong>Phone # +639274740154 Globe</strong></p>
-   <p><strong>Phone # +639396137864 Smart</strong></p>
   </div> 
   </div>
-
-<br>
-  <hr>
-<br>
-
-  <div id="Works" class="window" style="width: 630px">
-    <div class="title-bar">
-        <div class="title-bar-text">Commad Prompt</div>
-        <div class="title-bar-controls">
-          <button aria-label="Minimize"></button>
-          <button aria-label="Maximize"></button>
-          <button aria-label="Close"></button>
-        </div>
     </div> 
-    <div class="window-body">
-      <pre>Microsoft&#10094;R&#10095; Windows DOS
-        &#10094;C&#10095; Copyright Microsoft Corp 1990-2001.
-        <br>C:&#92;WINDOWS&#92;SYSTEM32> Below This Command Prompt Are My Works
-        <br>C:&#92;WINDOWS&#92;SYSTEM32> Here is Where you can Download My Works <a href="https://github.com/CarlosGuison?tab=repositories"target="_blank">Github</a> 
-      </pre>
-    </div>
-  </div>
-  <br>
-  <br>
-  <br>
-    <div id="Java Cal">
-      <p>Basic Java Calculator</p>
-      <img src="Basic Java Cal.PNG" alt="Code">
-      <a href="https://github.com/CarlosGuison/Java-Cal-Code" target="_blank">Github</a>
-  </div>
-<br> 
-  <hr>
 <br>
     <div id="Source Code">
       <p>This Website Source Code</p>
@@ -124,30 +109,64 @@
 <br>
   <hr>
 <br>
-    <div id="Skill Set" class="window" style="width: 345px;">
+    <div id="Skill Set" class="window" style="width: 550px;">
       <div class="title-bar">
-        <div class="title-bar-text">My Skill Set</div>
+        <div class="title-bar-text">My Skill IT Set</div>
       </div>
     <div class="window-body">
-     <p>My Skill Set</p>
+     <p>My Skill IT Set</p>
       <ul>
           <li>HTML is Average</li>
           <li>CSS is Average</li>
           <li>Java is Mediocre</li>
-          <li>Web Design is Below Par</li>
+          <li>PHP is Mediocre</li>
+          <li>Web Design is Bad</li>
+        </ul>
+        <p>Other Skills are</p>
+      <ul>
+          <li>English</li>
+          <li>Tagalog</li>
+          <li>Cleaning and Disassembly of Computer or Laptop</li>
+          <li>Microsoft Office (Word, Excel)</li>
       </ul>
     </div>
-    <div class="status-bar">
-      <p class="status-bar-field">HTML:  60%</p>
-      <p class="status-bar-field">CSS:  55%</p>
-      <p class="status-bar-field">Java:  43%</p>
-      <p class="status-bar-field">Web Design:  34%</p>
-    </div> 
+  </div>
+  <br>
+  <br>
+  <div class="window" style="width: 450px">
+    <div class="title-bar">
+      <div class="title-bar-text">Skills Level</div>
+      <div class="title-bar-controls">
+        <button aria-label="Minimize"></button>
+        <button aria-label="Maximize"></button>
+        <button aria-label="Close"></button>
+      </div>
+    </div>
+    <div class="window-body">
+      <p>HTML Level 80%</p>
+      <progress max="100" value="80"></progress>
+      <p>CSS Level 70%</p>
+      <progress max="100" value="70"></progress>
+      <p>Java Level 42%</p>
+      <progress max="100" value="42"></progress>
+      <p>PHP Level 40%</p>
+      <progress max="100" value="40"></progress>
+      <p>Web Design Level 15%</p>
+      <progress max="100" value="15"></progress>
+      <p>English Level 80%</p>
+      <progress max="100" value="80"></progress>
+      <p>Tagalog Level 60%</p>
+      <progress max="100" value="60"></progress>
+      <p>Cleaning and Disassembly of Computer/Laptop Level 75%</p>
+      <progress max="100" value="75"></progress>
+      <p>Microsoft Office Level 70%</p>
+      <progress max="100" value="70"></progress>
+    </div>
   </div>
 <br>
   <hr>
 <br>
-    <div id="Credentials" class="window" style="width: 450px;">
+    <div id="Credentials" class="window" style="width: 550px;">
       <div class="title-bar">
         <div class="title-bar-text">Credentials</div>
         <div class="title-bar-controls">
@@ -158,17 +177,30 @@
     <div class="window-body">
      <h3>My Credentials</h3>
     <ul>
-      <li><h4>San Francisco Elementary School Graduate Year:2016-2017</h4></li>
-      <li><h4>San Francisco Elementary School (ALS) Graduate Year:2019-2020</h4></li>
-      <li><h4>Currently Attending <br> San Francisco High School </h4></li>
+      <li><h4>San Francisco Elementary School (ALS) Year Graduate:2019-2020</h4></li>
+      <li><h4>San Francisco High School Senior High Year Graduate:</h4></li>
+      <li><h4>Currently Attending <br> Phinma Saint Jude Collage Manila</h4></li>
     </ul>
     </div>
   </div> 
 <br>
   <hr>
 <br>
-<p>Where I Learned To Code</p>
-<br>
-<p>San Francisco High School and from <a href="https://www.youtube.com/c/Freecodecamp" target="_blank">freeCodecamp.org</a> </p>
+<div class="window-body">
+  <pre>
+    <br>How I Learned Coding 
+    <br>Microsoft&#10094;R&#10095; Windows DOS 
+&#10094;C&#10095; Copyright Microsoft Corp 1990-2001.
+    <br>C:&#92;WINDOWS&#92;SYSTEM32> Where i Learned To Code
+    <br>C:&#92;WINDOWS&#92;SYSTEM32> San Francisco High School and Phinma Saint Jude Collage from <a href="https://www.youtube.com/c/Freecodecamp" target="_blank">freeCodecamp.org</a>
+    <br>C:&#92;WINDOWS&#92;SYSTEM32> You Can Also Learn From Watching Youtube and Do a Small Project While Learning to Help You
+  </pre>
+</div>
+</div>
+<section class="components">
+  <p>Made By Me, XP CSS Style Was Made By botoxparty 
+    <a href="https://github.com/botoxparty/XP.css">Github</a> </p> </h2>
+  </section>
+</main>
 </body>
 </html>
